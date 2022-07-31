@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+          .header{
+            background-color: #f1f1f1;
+            padding: 25px;
+            text-align: center;
+          }
+          .nav{
+            overflow: hidden;
+            background-color: #2f2f2f;
+           
+          }
+          .nav a{
+            padding:15px 17px;
+            float: left;
+            color: white;
+            text-decoration: none;
+          }
+          .nav a:hover{
+            background-color: white;
+            color: #2f2f2f;
+          }
+          .column{
+            float: left;
+            padding: 15px;
+          }
+          .column.side{
+            width: 25%;
+          }
+          .column.mide{
+            width: 50%;
+          }
+          .row::after{
+            content: "";
+            display: table;
+            clear: both;
+          }
+          .footer{
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 15px 12px;
+          }
+          @media screen and (max-widht:600px){
+            .column.side{
+                width: 100%;
+            }
+            .column.mide{
+                width: 100%;
+            }
+          
+
+          }
+        </style>
+</head>
+<body>
+    
+    <div class="header">
+        <h1>Header</h1>
+        <p>resize the browser window to see the responsive effec</p>
+    </div>
+    <div class="nav">
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+    </div>
+
+
+
+<div class="row">
+    <div class="column side">
+        <h2>Siden</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, sapiente non reprehenderit harum quod modi.</p>
+    </div>
+    <div class="column mide">
+        <h2>Main Content</h2>
+       <p>eius labore, distinctio, deleniti dolor aut. Cumque quo expedita nemo, dolores accusamus corporis cum id? Ipsum sapiente non odio tempora fugit dolor laborum molestiae quae velit voluptatem! Tempora perspiciatis accusantium rerum et sint? Ad quia sint voluptatum dolorum maxime cumque fugit assumenda neque officia molestiae repellat, repudiandae inventore incidunt ut eligendi explicabo minima! Fugit ullam deserunt cum alias?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente voluptatem debitis aliquam deleniti obcaecati veritatis, autem atque architecto quo, nesciunt dolores inventore ipsum nam temporibus? Placeat accusantium sed voluptatem harum ipsum error nemo dignissimos voluptatum beatae omnis ipsa, laudantium temporibus cupiditate accusamus </p>
+    </div>
+    <div class="column side">
+        <h2>Siden</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, sapiente non reprehenderit harum quod modi.</p>
+    </div>
+</div>
+<div class="footer">
+    <p>Footer</p>
+</div>
+    
+</body>
+</html>
